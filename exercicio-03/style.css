@@ -1,0 +1,92 @@
+/* O mesmo código CSS anterior */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFFFFF;
+  color: #000000;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+form label {
+  margin: 5px;
+}
+
+form input, form select, form button {
+  margin: 5px;
+  padding: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+.image-actions {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-actions button, .image-actions a {
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.image-actions button:hover, .image-actions a:hover {
+  background-color: #0056b3;
+}
+
+.image-actions button:focus, .image-actions a:focus {
+  outline: 2px solid #0056b3;
+}
+
+#errorMessage {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Contraste mínimo para WCAG 1.4.3 */
+body, input, select, button, a {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+button, a {
+  background-color: #007BFF;
+  color: #FFFFFF;
+}
+
+/* Foco visível para WCAG 2.4.4 */
+button:focus, a:focus {
+  outline: 2px solid #000000;
+}
